@@ -6,7 +6,7 @@ onload = () => {
         else {
             nome.style.backgroundColor = '#FFF';  
                                 
-    }   if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' ) btnEnviar.disabled = false;
+    }   if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
         else btnEnviar.disabled = true;
     };
     dateNas.onblur = () => {
@@ -15,7 +15,7 @@ onload = () => {
         }
         else {
             dateNas.style.backgroundColor = '#FFF';
-    }  if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' ) btnEnviar.disabled = false;
+    }  if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today) btnEnviar.disabled = false;
     else btnEnviar.disabled = true;
 };
     tel.onblur = () => {
@@ -24,7 +24,7 @@ onload = () => {
         }
         else {
             tel.style.backgroundColor = '#FFF';
-    }   if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' ) btnEnviar.disabled = false;
+    }   if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today) btnEnviar.disabled = false;
     else btnEnviar.disabled = true;
 };  
     // Data e Hora do Agendamento
@@ -32,25 +32,24 @@ onload = () => {
     console.log (today);
     date.onblur = () => {
         if(date.value == '' || date.value < today) {
-            date.style.backgroundColor = '#F88';                                       
+            date.style.backgroundColor = '#F88';
+            btnEnviar.disabled = true;                                       
         }
         else {
             date.style.backgroundColor = '#FFF';            
-        }  if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' ) btnEnviar.disabled = false;
+        }  if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
         else btnEnviar.disabled = true;
     }; 
-    // hora.value = '12:00';
-    var ini = '09:00';
-    var fim = '18:00';
     
     hora.onblur = () => {
-        if( hora.value == '')  {
+        if( hora.value < '09:00' || hora.value > '18:00')  {
             hora.style.backgroundColor = '#F88';
         } else {
             hora.style.backgroundColor = '#FFF';
-
-        }
+        } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
+        else btnEnviar.disabled = true;
     };
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
