@@ -18,9 +18,49 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
+/* Import de fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans+Display&family=Roboto:wght@100&display=swap');
+/* 
+font-family: 'Major Mono Display', monospace;
+font-family: 'Noto Sans Display', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Color Theme RGBA  SIAND*/
+:root{ 
+    --cinza: #A5A4A6;
+    --verde:  #999C85;
+    --rosa:  #E1B7AB; 
+    --rose:  #F1DAD1; 
+    --branco:  #FCFCFC; 
+}
+
 body {
-    background-color: violet;
+    background-color: var(--branco);
+
 }
-h1 {
-    font-size: smaller;
+
+.container-fluid {
+    background-color: var(--rosa);
+    font-family: 'Roboto', sans-serif; 
+    padding: 0;
+    margin: 0;
+    
+     
 }
+.container-lg {
+    /* background-color: var(--rose); */
+    
+}
+.botao{
+    
+}
+.logo {
+   
+    height: 120px;
+}
+/* 
+.btn:hover {
+    opacity: 0.8;
+} */
+
