@@ -37,30 +37,43 @@ font-family: 'Roboto', sans-serif; */
 
 body {
     background-color: var(--branco);
-
+    /* background-image: url('/Img/Símbolo/Marca\ D_água.png');
+    background-repeat:no-repeat;
+    background-size: 50%;
+    background-position: center bottom; */
 }
 
-.container-fluid {
-    background-color: var(--rosa);
+.conteudo {
     font-family: 'Roboto', sans-serif; 
     padding: 0;
-    margin: 0;
-    
-     
+    margin: 0;     
+    background-image: url('/Img/Símbolo/Marca\ D_água.png');
+    background-repeat:no-repeat;
+    background-size: 50%;
+    background-position: center;       
 }
-.container-lg {
-    /* background-color: var(--rose); */
-    
+.menu {       
+    font-family: 'Major Mono Display', monospace; 
+    background-color: var(--branco);
+    width: 100%;
+    background-color: var(--rose);
 }
-.botao{
-    
-}
-.logo {
-   
+
+.logo {   
     height: 120px;
+    background-color: var(--branco);
 }
 /* 
 .btn:hover {
     opacity: 0.8;
 } */
+.carrosel-banner{
+    margin-top: 1%;
+    margin-bottom: 5;
+}
 
+.box-banner{
+    height: 100%;
+    width: 100%;
+    display: block;    
+}

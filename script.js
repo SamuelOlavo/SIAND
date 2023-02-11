@@ -74,7 +74,6 @@ onload = () => {
         agendamento.style.display = 'none';
     }
 
-    document.getElementById('agendamento').addEventListener('submit', handleSubmit);
+    document.getElementById('agendamento').addEventListener('submit', handleSubmit);    
 
-    
 };
