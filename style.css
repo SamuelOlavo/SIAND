@@ -47,7 +47,7 @@ body {
     font-family: 'Roboto', sans-serif; 
     padding: 0;
     margin: 0;     
-    background-image: url('/Img/Símbolo/Marca\ D_água.png');
+    background-image: url('Img/Símbolo/Marca\ D_água.png');
     background-repeat:no-repeat;
     background-size: 50%;
     background-position: center;       
@@ -61,12 +61,9 @@ body {
 
 .logo {   
     height: 120px;
-    background-color: var(--branco);
+    /* background-color: var(--branco);  */
 }
-/* 
-.btn:hover {
-    opacity: 0.8;
-} */
+
 .carrosel-banner{
     margin-top: 1%;
     margin-bottom: 5;
@@ -77,3 +74,20 @@ body {
     width: 100%;
     display: block;    
 }
+.rodape a {
+    text-decoration: none;
+    color:#292928f1   
+}
+.redes a:hover {
+    color: rgb(0, 0, 0); 
+    font-size: 115%;
+    transition: all;   
+}
+.rodape
+.topo {
+    background-color: var(--rose);
+    height: 100%;
+    width: 100%;
+    font-family: 'Major Mono Display', monospace;
+}
+
