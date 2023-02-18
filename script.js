@@ -1,4 +1,4 @@
-onload = () => {
+onload = () => {    
     nome.onblur = () => {
         if(nome.value == '') {
             nome.style.backgroundColor = '#F88';   
@@ -49,6 +49,7 @@ onload = () => {
         } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
         else btnEnviar.disabled = true;
     };
+    
     
 
     const handleSubmit = (event) => {

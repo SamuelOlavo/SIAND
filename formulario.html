@@ -45,10 +45,32 @@
 <main class="conteudo container-fluid ">
     <div class="container-lg ps-2 pt-3 border-bottom rounded-3">
         <div class="h4 pd-2 mb-3 border-bottom ">
-    <h3 class="display-6 ps-3" >Agendamento</h3>
-</div>
+          <h3 class="display-6 ps-3" >Agendamento</h3>
+         </div>
+         <div class="card mb-3" style="max-width: 100%;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/Img/capa.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ">
+            <p class="card-text fst-italic"> O Seu bem-estar em primeiro lugar: aproveite os benefícios da nossa clínica de estética! 
+              <li class="list-group-item mt-1 fst-italic">⚜️ Depilação a Laser                    </li>              
+              <li class="list-group-item fst-italic">⚜️ Remoção de tatuagem                  </li>
+              <li class="list-group-item fst-italic">⚜️ Striort                              </li>
+              <li class="list-group-item fst-italic">⚜️ Remoção de Micro de sobrancelha   </li>                
+              <p class="card-text mt-3 fst-italic">👸🏻 Realçando o que há de mais lindo em você!
+               Depilação a Laser, Remoção de Tatuagem, Tratamento de Estrias, Manchas, Acne e outros serviços que vão elevar sua autoestima.   Estética para todos, serviços de qualidade! </p>
+              <p class="fw-bolder card-text fw-lighter mt-5">
+                Preecha o formulario abaixo que entraremos em contato!
+              </p>      
+          </div>
+        </div>
+      </div>
+    </div>
+         
     <form id="agendamento">
-        <div class="row mb-2">        
+      <div class="row mb-2">        
         <label for="nome" class="col-sm-2 col-form-label-lg"> Nome: </label>
         <div class="col-sm-10">
             <input type="text" id="nome" class="form-control" name="nome" />
@@ -74,14 +96,12 @@
             <label  class="form-label mt-3 " for="Horario"> Escolha o horário de agendamento (aberto das 09:00 às 18:00)</label>        
             <div class="col-sm-15">
             <input id="hora" type="time"  class="form-control" name="hora" min="09:00" max="18:00" >                        
-        </div>
-        </div>
-    <div class="d-grid gap-1">   
+            </div>
+      </div>
+    <div class="d-grid gap-1">        
          <button id="btnEnviar" type="submit" class="botao btn btn-secondary m-2 btn-lg rounded-2" disabled> Enviar </button>
     </div> 
-    </form>
-    <div id="mensagem"></div>
-
+    </form> 
     </div>
 </main>
 

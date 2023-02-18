@@ -31,16 +31,12 @@ font-family: 'Roboto', sans-serif; */
     --cinza: #A5A4A6;
     --verde:  #999C85;
     --rosa:  #E1B7AB; 
-    --rose:  #F1DAD1; 
+    --rose:  #f1dad1; 
     --branco:  #FCFCFC; 
 }
 
 body {
     background-color: var(--branco);
-    /* background-image: url('/Img/Símbolo/Marca\ D_água.png');
-    background-repeat:no-repeat;
-    background-size: 50%;
-    background-position: center bottom; */
 }
 
 .conteudo {
@@ -53,41 +49,59 @@ body {
     background-position: center;       
 }
 .menu {       
-    font-family: 'Major Mono Display', monospace; 
-    background-color: var(--branco);
+    font-family: 'Major Mono Display', monospace;     
     width: 100%;
     background-color: var(--rose);
 }
 
 .logo {   
     height: 120px;
-    /* background-color: var(--branco);  */
+}
+.topo {
+    background-color: var(--rose);
+    height: 100%;
+    width: 100%;
+    font-family: 'Major Mono Display', monospace;
 }
 
 .carrosel-banner{
     margin-top: 1%;
     margin-bottom: 5;
 }
-
 .box-banner{
     height: 100%;
     width: 100%;
     display: block;    
 }
 .rodape a {
-    text-decoration: none;
-    color:#292928f1   
+    text-decoration: none;  
+    font-family: 'Major Mono Display', monospace;
+    font-size: 90%;  
 }
 .redes a:hover {
     color: rgb(0, 0, 0); 
     font-size: 115%;
     transition: all;   
 }
-.rodape
-.topo {
-    background-color: var(--rose);
-    height: 100%;
-    width: 100%;
+.redes a {
+    color:#292928f1; 
+}
+.but {  
     font-family: 'Major Mono Display', monospace;
+}
+.but:hover{
+    font-size: 105%;
+}
+.but:active {
+    background-color: var(--rosa);
+}
+.mensagem {
+    height: 800px;
+    background-color: #999C85;
+    font-family: 'Major Mono Display', monospace;
+}
+.botao:hover {
+    background-color: red;
+
 }
 
