@@ -49,8 +49,7 @@ onload = () => {
         } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
         else btnEnviar.disabled = true;
     };
-    
-    
+       
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -71,10 +70,9 @@ onload = () => {
                 body: JSON.stringify({ NomeCliente , DataNascimento, Telefone , Data ,  Hora}),
         });
 
-        mensagem.innerHTML = `Aguarde a confirmação do agendamento por Whatsaap!`;
+        mensagem.innerHTML = ` <p>Formulario enviado com sucesso!</p>
+                               <p>Aguarde a confirmação do agendamento por Whatsaap!</p>`;
         agendamento.style.display = 'none';
     }
-
-    document.getElementById('agendamento').addEventListener('submit', handleSubmit);    
-
+    document.getElementById('agendamento').addEventListener('submit', handleSubmit);
 };

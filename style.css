@@ -95,13 +95,16 @@ body {
 .but:active {
     background-color: var(--rosa);
 }
-.mensagem {
-    height: 800px;
-    background-color: #999C85;
-    font-family: 'Major Mono Display', monospace;
-}
 .botao:hover {
-    background-color: red;
-
+    background-color: #999C85;
+}
+.msg {          
+    font-size: 110%; 
+    margin-left: auto;
+    margin-right: auto;  
+    text-align: center;    
+    border-style: none;    
+    max-width: 50rem;   
+    background-color: rgb(252, 157, 157);  
 }
 
