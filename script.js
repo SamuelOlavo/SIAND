@@ -68,11 +68,13 @@ onload = () => {
                 'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ NomeCliente , DataNascimento, Telefone , Data ,  Hora}),
-        });
-
-        mensagem.innerHTML = ` <p>Formulario enviado com sucesso!</p>
-                               <p>Aguarde a confirmação do agendamento por Whatsaap!</p>`;
-        agendamento.style.display = 'none';
+        });               
+        
+        document.querySelector('.loader').style.display = 'block';
+        let timeout = window.setTimeout(function() {            
+            document.querySelector('.loader').style.display = 'none';
+            document.getElementById('agendamento').reset();
+          }, 5000);                
     }
     document.getElementById('agendamento').addEventListener('submit', handleSubmit);
 };
