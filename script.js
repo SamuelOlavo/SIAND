@@ -1,4 +1,7 @@
-onload = () => {    
+onload = () => {   
+    
+    document.getElementById('btnEnviar').disabled = true;
+
     nome.onblur = () => {
         if(nome.value == '') {
             nome.style.backgroundColor = '#F88';   
@@ -49,7 +52,7 @@ onload = () => {
         } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
         else btnEnviar.disabled = true;
     };
-       
+
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -73,8 +76,9 @@ onload = () => {
         document.querySelector('.loader').style.display = 'block';
         let timeout = window.setTimeout(function() {            
             document.querySelector('.loader').style.display = 'none';
-            document.getElementById('agendamento').reset();
-          }, 5000);                
+            document.querySelector("form").reset();            
+          }, 5000);
+          document.getElementById('btnEnviar').disabled = true;                
     }
     document.getElementById('agendamento').addEventListener('submit', handleSubmit);
 };
