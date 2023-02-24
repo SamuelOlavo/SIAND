@@ -127,3 +127,8 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+.proced {
+    
+    font-family: 'Noto Sans Display', sans-serif;
+}
