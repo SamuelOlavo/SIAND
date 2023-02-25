@@ -40,13 +40,14 @@ body {
 }
 
 .conteudo {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Noto Sans Display', sans-serif; 
     padding: 0;
     margin: 0;     
     background-image: url('Img/Símbolo/Marca\ D_água.png');
     background-repeat:no-repeat;
     background-size: 50%;
-    background-position: center;       
+    background-position: center; 
+    background-color: #e0dec152;      
 }
 .menu {       
     font-family: 'Major Mono Display', monospace;     
@@ -65,8 +66,8 @@ body {
 }
 
 .carrosel-banner{
-    margin-top: 1%;
-    margin-bottom: 5;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
 .box-banner{
     height: 100%;
@@ -129,7 +130,7 @@ body {
   }
 
 .proced {    
-    font-family: 'Noto Sans Display', sans-serif;
+   
 }
 .titulo {
     background-color: #43412e;
@@ -139,11 +140,23 @@ body {
     border: 5px solid #000000;
     width: 100%;
     vertical-align: center;
-    color: #e1b7ab;
+    color: #ffb29d;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-weight: bold
-
-   
-
+    font-weight: bold;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+.img {
+    -webkit-box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
+}
+.img-circle {
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 3px solid #43412e;
+    -webkit-box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
 }
