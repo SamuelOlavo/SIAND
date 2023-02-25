@@ -53,6 +53,11 @@ body {
     font-family: 'Major Mono Display', monospace;     
     width: 100%;
     background-color: var(--rose);
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border-bottom: 2px solid #43412e;
+    font-size: 18px;
 }
 
 .logo {   
