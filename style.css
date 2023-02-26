@@ -94,12 +94,20 @@ body {
 }
 .but {  
     font-family: 'Major Mono Display', monospace;
+    transition-timing-function: ease;
+    background-color: #43412e;
+    border-radius: 200px 200px 200px 200px;    
+    border: 4px solid #000000; 
+    color: #ffb29d;
+    margin-top: 1%;
 }
 .but:hover{
-    font-size: 105%;
-}
-.but:active {
-    background-color: var(--rosa);
+    font-size: 99%;
+    transition-timing-function: ease;
+    background-color: #ffb29d;
+    color: #43412e;
+    border: 4px solid #000000; 
+    font-weight: bold;
 }
 .botao:hover {
     background-color: #999C85;
@@ -139,22 +147,18 @@ body {
 }
 .titulo {
     background-color: #43412e;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 5px solid #000000;
+    border-radius: 200px 200px 200px 200px;    
+    border: 4px solid #000000;
     width: 100%;
     vertical-align: center;
     color: #ffb29d;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 7px;
+    padding-bottom: 7px;
     font-weight: bold;
     font-family: 'Noto Sans Display', sans-serif;
 }
 .img {
-    -webkit-box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
-    box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 28px 5px rgba(0,0,0,0.75);
 }
 .img-circle {
     border-radius: 200px 200px 200px 200px;
