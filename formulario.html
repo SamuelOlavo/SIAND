@@ -61,7 +61,7 @@
               <li class="list-group-item fst-italic">⚜️ Remoção de Micro de sobrancelha   </li>                
               <p class="card-text mt-3 ">👸🏻 Realçando o que há de mais lindo em você!  Tratamento de Estrias, Manchas, Acne e outros serviços que vão elevar sua autoestima.   Estética para todos, serviços de qualidade! </p>
               <p class="fw-bolder card-text fw-lighter mt-4">
-                Preecha o formulario abaixo que entraremos em contato!
+                Preecha o formulario abaixo que entraremos em contato! Sera um prazer lhe atender!
               </p>      
           </div>
         </div>
@@ -88,7 +88,7 @@
         </div>
         </div>   
         <div class="bg-info p-2 bg-opacity-10 border border-info border-start-1 ">
-         <label for="data" class="col-sm-2 col-form-label"> Data: </label>
+             <label for="data" class="col-sm-2 col-form-label"> Data: </label>
             <div class="col-sm-15">
             <input type="date" id="date" class="form-control" name="Data" min="${today}"/>
             </div>
@@ -96,6 +96,24 @@
             <div class="col-sm-15">
             <input id="hora" type="time"  class="form-control" name="hora" min="09:00" max="18:00" >                        
             </div>
+            <label for="servicos" class="form-label mt-3"> Escolha um de nossos Serviços: </label>
+            <div class="col-sm-15">
+              <select id="serv" class="form-select form-control" name="serv" > 
+                <option value="">⇕</option>               
+                <option value="Avaliação Corporal">Avaliação Corporal </option>
+                <option value="Avaliação Facil">Avaliação Facil </option>
+                <option value="Limpeza de Pele">Limpeza de Pele </option>
+                <option value="Revitalização facial">Revitalização facial </option>
+                <option value="Peeling Químico">Peeling Químico </option>
+                <option value="Microagulhamento">Microagulhamento </option>
+                <option value="Drenagem Linfática">Drenagem Linfática</option>
+                <option value="Spa Day">Spa Day </option>
+                <option value="Spa Mãos e Pés">Spa Mãos e Pés</option>
+                <option value="Ventosaterapia">Ventosaterapia</option>
+                <option value="Massagem Relaxante">Massagem Relaxante</option>
+              </select>
+            </div>
+            
       </div>
     <div class="d-grid gap-1">        
          <button id="btnEnviar" type="submit" class="botao btn btn-secondary btn-lg mt-2 mb-3 rounded-2"> Enviar </button>

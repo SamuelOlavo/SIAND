@@ -9,27 +9,38 @@ onload = () => {
         else {
             nome.style.backgroundColor = '#FFF';  
                                 
-    }   if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
+        } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today && serv.value != '') btnEnviar.disabled = false;
         else btnEnviar.disabled = true;
-    };
+    };  
     dateNas.onblur = () => {
         if(dateNas.value == '') {
             dateNas.style.backgroundColor = '#F88';                   
         }
         else {
             dateNas.style.backgroundColor = '#FFF';
-    }  if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today) btnEnviar.disabled = false;
-    else btnEnviar.disabled = true;
-};
+        } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today && serv.value != '') btnEnviar.disabled = false;
+        else btnEnviar.disabled = true;
+    };  
     tel.onblur = () => {
         if(tel.value == '') {
             tel.style.backgroundColor = '#F88';                   
         }
         else {
             tel.style.backgroundColor = '#FFF';
-    }   if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today) btnEnviar.disabled = false;
-    else btnEnviar.disabled = true;
-};  
+        } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today && serv.value != '') btnEnviar.disabled = false;
+        else btnEnviar.disabled = true;
+    };   
+
+    serv.onblur = () => {
+        if (serv.value == '') {
+            serv.style.backgroundColor = '#F88';
+         }
+        else {
+            serv.style.backgroundColor = '#FFF';
+        } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today && serv.value != '') btnEnviar.disabled = false;
+        else btnEnviar.disabled = true;
+    };  
+
     // Data e Hora do Agendamento
     var today = new Date().toISOString().split('T')[0];                    
     console.log (today);
@@ -40,18 +51,19 @@ onload = () => {
         }
         else {
             date.style.backgroundColor = '#FFF';            
-        }  if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
+        } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today && serv.value != '') btnEnviar.disabled = false;
         else btnEnviar.disabled = true;
-    }; 
+    };  
     
     hora.onblur = () => {
         if( hora.value < '09:00' || hora.value > '18:00')  {
             hora.style.backgroundColor = '#F88';
         } else {
             hora.style.backgroundColor = '#FFF';
-        } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today ) btnEnviar.disabled = false;
+        } if (nome.value != '' && tel.value != '' && dateNas.value != '' && date.value != '' && hora.value != '' && date.value > today && serv.value != '') btnEnviar.disabled = false;
         else btnEnviar.disabled = true;
-    };
+    };  
+
 
 
     const handleSubmit = (event) => {
@@ -62,6 +74,7 @@ onload = () => {
         const Data = document.getElementById('date').value;
         const DataNascimento = document.getElementById('dateNas').value;  
         const Hora = document.getElementById('hora').value;
+        const Servico = document.getElementById('serv').value;
         //Observado que a declaração da variavel deve estar dentro da função e sobre a consulta no DOM pode usar o ID normalmente
 
         fetch('https://api.sheetmonkey.io/form/vb44GDNaPbaYwZHvEbHMHU', {
@@ -70,7 +83,7 @@ onload = () => {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ NomeCliente , DataNascimento, Telefone , Data ,  Hora}),
+                body: JSON.stringify({ NomeCliente , DataNascimento, Telefone , Data ,  Hora, Servico}),
         });               
         
         document.querySelector('.loader').style.display = 'block';
