@@ -71,8 +71,8 @@ body {
 }
 
 .carrosel-banner{
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;    
 }
 .box-banner{
     height: 100%;
@@ -142,9 +142,6 @@ body {
     100% { transform: rotate(360deg); }
   }
 
-.proced {    
-   
-}
 .titulo {
     background-color: #43412e;
     border-radius: 200px 200px 200px 200px;    
