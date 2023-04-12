@@ -19,6 +19,12 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+@media screen and (min-width: 800px) {
+    /* .icone {
+        display: none;
+    } */
+  }
+
 img[ src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" ]{display:none;}
 /* Import de fontes do google */
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans+Display&family=Roboto:wght@100&display=swap');
@@ -119,8 +125,7 @@ body {
     background-color: #999C85;
 }
 .botao:hover {
-    background-color: #999C85;
-    font-size: 91%;
+    background-color: #999C85;    
 }
 .msg {          
     font-size: 110%; 
@@ -175,4 +180,14 @@ body {
     -webkit-box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
     box-shadow: 4px 2px 48px 0px rgba(0,0,0,0.75);
+}
+
+.active {
+    font-size: 115%;
+}
+
+.icone {
+    position: absolute;
+    left: 80%;
+    top: 5px;
 }
