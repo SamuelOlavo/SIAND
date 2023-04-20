@@ -97,7 +97,7 @@ body {
 }
 .redes a:hover {
     color: rgb(0, 0, 0); 
-    font-size: 115%;
+    font-size: 16px;
     transition: all;   
 }
 .redes a {
