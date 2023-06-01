@@ -75,6 +75,9 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Major Mono Display', monospace;
+    background-image: url(Img/coração.png);
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .carrosel-banner{
